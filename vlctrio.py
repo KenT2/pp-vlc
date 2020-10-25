@@ -199,7 +199,7 @@ class PiPresents():
         print ('play2')
         self.od2=VLCDriver(self.nursery)
         self.shower_list.append(self.od2)
-        # track,x,y,width,height,(pause at start = before,after,no),loaded callback
+        # track,x,y,width,height,(pause at start = before,after,no)
         await self.od2.load('5sec.mp4','HDMI-2',100,100,100,100,256,'no')
         # (pause at end = yes,no), end callback
         await self.od2.show('no',None)
